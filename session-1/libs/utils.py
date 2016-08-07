@@ -91,7 +91,7 @@ def get_celeb_files():
         os.mkdir('img_align_celeba')
 
     # Now perform the following 100 times:
-    for img_i in range(1, 100):
+    for img_i in range(1, 101):
 
         # create a string using the current loop counter
         f = '000%03d.jpg' % img_i

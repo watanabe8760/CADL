@@ -12,8 +12,8 @@ This repository contains homework assignments for the <a href="https://www.kaden
 | --- | --- | --- |
 |Installation| **[Installation](#installation-preliminaries)** | Setting up Python/Notebook and necessary Libraries. |
 |Preliminaries| **[Preliminaries with Python](session-0)** | Basics of working with Python and images. |
-|1| **[Creating a Dataset/Computing with Tensorflow](session-1)** | Working with a small dataset of images.  Dataset preprocessing.  Tensorflow basics.  Sorting/organizing a dataset. |
-|2| **[TBA](session-2)** | TBA. |
+|1| **[Creating a dataset/Computing with Tensorflow](session-1)** | Working with a small dataset of images.  Dataset preprocessing.  Tensorflow basics.  Sorting/organizing a dataset. |
+|2| **[Training a network/Teaching a network to paint](session-2)** | Learn how to create a Neural Network.  Learn to use a neural network to paint an image.  Apply creative thinking to the inputs, outputs, and definition of a network. |
 |3| **[TBA](session-3)** | TBA. |
 |4| **[TBA](session-4)** | TBA. |
 |5| **[TBA](session-5)** | TBA. |
@@ -216,7 +216,22 @@ This will launch the Jupyter Notebook where you will be able to interact with th
 <a name="installing-python-packages"></a>
 ## Installing Python Packages
 
-Packages are libraries or useful extensions to the standard python libraries.  In this course, we'll be using a few including Tensorflow, NumPy, MatPlotLib, SciPy, SciKit-Image, and SciKit-Learn.  Windows users will already have these libraries since the Docker container includes these.  However, if you needed to, you can install these using "pip", which is the python package manager.  OSX/Linux users should follow these steps just to be sure they have the latest versions of these packages. In Python 3.4 and higher, `pip` comes with any standard python installation.  In order to use `pip`, you'll write:
+Packages are libraries or useful extensions to the standard python libraries.  In this course, we'll be using a few including Tensorflow, NumPy, MatPlotLib, SciPy, SciKit-Image, and SciKit-Learn.  Windows users will already have these libraries since the Docker container includes these.  However, if you needed to, you can install these using "pip", which is the python package manager.  OSX/Linux users should follow these steps just to be sure they have the latest versions of these packages. In Python 3.4 and higher, `pip` comes with any standard python installation.  In order to use `pip`, first make sure you are using the correct version.  One way to do this is check which pip you are running:
+
+```shell
+$ which pip
+$ which pip3
+```
+
+Use which `pip` points to the install path that makes the most sense (e.g. Anaconda for OSX users for some reason does not symlink pip3 to the python3 pip, and instead points to the system version of python3).
+
+Then you'll write:
+
+```shell
+$ pip3 install -U pip setuptools
+```
+
+To make sure you have an up to date pip, then:
 
 ```shell
 $ pip3 install some_package
