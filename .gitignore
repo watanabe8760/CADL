@@ -6,5 +6,15 @@ __pycache__/
 # iPython
 .ipynb_checkpoints
 
-#
+# memo
+memo.txt
+
+# Session 1
 session-0/
+George_W_Bush/
+George_W_Bush_2/
+birds/
+
+# Session 2
+img_align_celeba/
+gif/
