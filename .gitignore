@@ -17,3 +17,13 @@ birds/
 
 # Session 2
 img_align_celeba/
+
+# Session 3
+session-3/MNIST_data
+session-3/png_manifold
+session-3/png_reconstruction
+session-3/gtzan_music_speech/
+checkpoint
+model.ckpt
+model.ckpt.meta
+vae.ckpt-0
