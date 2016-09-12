@@ -27,3 +27,8 @@ checkpoint
 model.ckpt
 model.ckpt.meta
 vae.ckpt-0
+
+# Session 4
+*.tfmodel
+*.zip
+inception/
